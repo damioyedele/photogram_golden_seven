@@ -11,6 +11,9 @@ Rails.application.routes.draw do
   get("/photos/:id/edit", {:controller => "photos", :action => "edit_form"})
   get("/update_photo/:id", {:controller => "photos", :action => "update_row"})
 
+  #Delete
+  get("/delete_photo/:id", {:controller => "photos", :action => "delete_row"})
+
 end
 
 # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html

@@ -38,7 +38,13 @@ class PhotosController < ApplicationController
   end
 
   def update_row
-    
+    p = Photo.find(params[:id]) #This calls up the old photo, then we create a new row. From this point on we do the same thing we've done before
+    p.caption = params[:caption]
+    p.source = params[:source]
+    p.save #this step is critical
+
+    redirect_to("/photos")
+  end
 
 
 end
