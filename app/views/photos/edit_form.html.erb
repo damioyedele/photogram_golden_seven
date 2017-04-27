@@ -1,0 +1,17 @@
+<h1> Edit your photo
+</h1>
+
+<form action="http://localhost:300/update_photo/<%= @photo.id %>">
+
+  <div>
+    <label for="url">
+      Image URL
+    </label>
+    <input type="text" id="url" name="source" value="<%= @photo.source %>">
+  </div>
+
+  <div>
+    <button>Edit your photo</button>
+  </div>
+
+</form>
