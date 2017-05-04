@@ -46,5 +46,12 @@ class PhotosController < ApplicationController
     redirect_to("/photos")
   end
 
+  def delete_row
+    p = Photo.find(params[:id]) #This calls up the old photo
+    p.destroy
+
+    redirect_to("/photos")
+  end
+
 
 end

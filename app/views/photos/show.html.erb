@@ -5,6 +5,14 @@
     <%= @photo.caption %>
   </p>
 
+  <p>
+    <%= @photo.created_at %>
+  </p>
+
+  <p>
+    <%= time_ago_in_words(@photo.created_at) %>
+  </p>
+
   <div>
     <a href="http://localhost:3000/photos/">Back</a>
     <a href="#">Edit</a>
